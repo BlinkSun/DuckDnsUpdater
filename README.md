@@ -1,5 +1,11 @@
 # DuckDNS Updater
 
+[![CI](https://github.com/BlinkSun/DuckDnsUpdater/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/BlinkSun/DuckDnsUpdater/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/BlinkSun/DuckDnsUpdater)](https://github.com/BlinkSun/DuckDnsUpdater/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/BlinkSun/DuckDnsUpdater/blob/master/LICENSE)
+[![Tests](https://img.shields.io/badge/tests-23%20passing-brightgreen)](https://github.com/BlinkSun/DuckDnsUpdater/actions/workflows/ci.yml)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4)](https://dotnet.microsoft.com/)
+
 A lightweight Windows system tray app that keeps your DuckDNS record updated with your current public IP.
 
 ## Summary
