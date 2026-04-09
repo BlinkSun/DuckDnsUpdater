@@ -2,15 +2,7 @@
 
 A lightweight Windows system tray app that keeps your DuckDNS record updated with your current public IP.
 
-## Francais (resume)
-- Application WinForms tray-only (aucune fenetre principale)
-- Mise a jour DuckDNS automatique et manuelle
-- Token protege localement via DPAPI (CurrentUser)
-- Health status visible dans le menu tray
-- Test de configuration integre
-- Retry, timeout, fallback IP providers, logs locaux
-
-## English (summary)
+## Summary
 - Tray-only WinForms app (no main window)
 - Automatic and on-demand DuckDNS updates
 - Local token protection with DPAPI (CurrentUser)

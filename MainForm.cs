@@ -90,14 +90,29 @@ public class MainForm : Form
 
     private void InitializeTrayIcon()
     {
+        Icon trayIconResource = LoadTrayIconSafely();
+
         trayIcon = new NotifyIcon
         {
             Text = "DuckDns Updater",
-            Icon = new Icon("logo.ico", 40, 40),
+            Icon = trayIconResource,
             ContextMenuStrip = trayMenu,
             Visible = true,
         };
         trayIcon.DoubleClick += (s, e) => MessageBox.Show("Right click to choose from one of the menu options!");
+    }
+
+    private Icon LoadTrayIconSafely()
+    {
+        try
+        {
+            return new Icon("logo.ico", 40, 40);
+        }
+        catch (Exception ex)
+        {
+            LogWarning($"Custom tray icon unavailable. Falling back to default icon. {ex.Message}");
+            return SystemIcons.Application;
+        }
     }
 
     private void InitializeTimer()
